@@ -1,4 +1,6 @@
-﻿namespace MauiAppJogoDaVelha
+﻿using System.Diagnostics;
+
+namespace MauiAppJogoDaVelha
 {
     public partial class MainPage : ContentPage
     {
@@ -19,6 +21,23 @@
             {
                 await DisplayAlertAsync("Fim de Jogo", "Jogador X venceu!", "OK");
             }
+
+            //caminho mais longo para acessar os itens do jogo
+            var itens = Jogo.Children;
+
+            foreach (var x in Jogo.Children)
+            {
+                if (x is Button btn)
+                {
+                    int coluna = Grid.GetColumn(btn);
+                    int linha = Grid.GetRow(btn);
+
+                    Debug.WriteLine(btn.Text);
+                    Debug.WriteLine(coluna);
+                    Debug.WriteLine(linha);
+                }
+            }
+
         }
     }
 }
