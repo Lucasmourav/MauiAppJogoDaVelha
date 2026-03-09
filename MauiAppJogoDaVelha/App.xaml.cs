@@ -1,6 +1,4 @@
-﻿using Android.Views;
-using Microsoft.Extensions.DependencyInjection;
-
+﻿
 namespace MauiAppJogoDaVelha
 {
     public partial class App : Application
