@@ -21,7 +21,7 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-        <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*" Margin="10" x:Name="Jogo">
+        <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*" Margin="10" x:Name="jogo">
             <Label Grid.Row="0" Grid.ColumnSpan="5" Grid.Column="0"
                    Margin="5"
                    Text="Jogo da Velha"/>
